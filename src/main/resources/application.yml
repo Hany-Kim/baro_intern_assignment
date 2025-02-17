@@ -16,3 +16,18 @@ spring:
 jwt:
   secret:
     key: 7Iqk7YyM66W07YOA7L2U65Sp7YG065+9U3ByaW5n6rCV7J2Y7Yqc7YSw7LWc7JuQ67mI7J6F64uI64ukLg==
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs   # Swagger 문서 경로를 명확하게 지정
+  swagger-ui:
+    path: /swagger-ui.html # Swagger UI 경로 명시
+  enable-spring-security: true
+  default-consumes-media-type: application/json
+
+# OpenAPI 버전 명시
+openapi:
+  info:
+    title: "My API"
+    version: "1.0.0"
